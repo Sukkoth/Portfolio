@@ -14,7 +14,7 @@
         <title>Gadisa Teklu</title>
     </head>
     <body>
-        <div class="main" id="home-section">
+        <div class="main" id="home">
             <div class="side-bar">
                 <div class="title">
                     <h1>Gadisa</h1>
@@ -29,28 +29,36 @@
                     <p>2023 Gadisa, All Rights Reserved</p>
                 </div>
                 <div class="socials">
-                    <a href=""><i class="fa-brands fa-linkedin icon"></i></a>
-                    <a href=""><i class="fa-brands fa-github icon"></i></a>
-                    <a href=""><i class="fa-brands fa-x-twitter icon"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope icon"></i></a>
+                    <a
+                        target="_blank"
+                        href="https://linkedin.com/in/gadisa-teklu-8020a991"
+                        ><i class="fa-brands fa-linkedin icon"></i
+                    ></a>
+                    <a target="_blank" href="https://github.com/Sukkoth"
+                        ><i class="fa-brands fa-github icon"></i
+                    ></a>
+                    <a target="_blank" href="https://twitter.com/suukoot"
+                        ><i class="fa-brands fa-x-twitter icon"></i
+                    ></a>
+                    <a target="_blank" href="mailto:“suukootj@gmail.com”"
+                        ><i class="fa-solid fa-envelope icon"></i
+                    ></a>
                 </div>
-                <button class="btn btn-green btn-hire-me">
-                    <i class="fa-regular fa-message"></i> HIRE ME!
-                </button>
+                <a href="#contact">
+                    <button class="btn btn-green btn-hire-me">
+                        <i class="fa-regular fa-message"></i> HIRE ME!
+                    </button>
+                </a>
             </div>
             <nav class="nav">
-                <a href="#home-section" title="Home"
+                <a href="#home" title="Home"
                     ><i class="fa-solid fa-house"></i
                 ></a>
-                <a href="#about-section" title="About"
+                <a href="#about" title="About"
                     ><i class="fa-solid fa-user"></i
                 ></a>
-                <a href="#resume-section"
-                    ><i class="fa-solid fa-briefcase icon"></i
-                ></a>
-                <a href="#services"
-                    ><i class="fa-brands fa-servicestack"></i
-                ></a>
+                <a href="#resume"><i class="fa-solid fa-briefcase icon"></i></a>
+                <a href="#skills"><i class="fa-brands fa-servicestack"></i></a>
                 <a href="#environment"> <i class="fa-solid fa-desktop"></i></a>
                 <a href="#contact"
                     ><i class="fa-solid fa-envelopes-bulk"></i
@@ -77,11 +85,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="section about" id="about-section">
-                    <a
-                        href="#about-section"
-                        class="btn btn-transparent btn-nav"
-                    >
+                <div class="section about" id="about">
+                    <a href="#about" class="btn btn-transparent btn-nav">
                         <i class="fa-solid fa-user"></i> About
                     </a>
                     <h1 class="section-header">
@@ -101,11 +106,8 @@
                         your ideas to life!
                     </p>
                 </div>
-                <div class="section resume" id="resume-section">
-                    <a
-                        href="#resume-section"
-                        class="btn btn-transparent btn-nav"
-                    >
+                <div class="section resume" id="resume">
+                    <a href="#resume" class="btn btn-transparent btn-nav">
                         <i class="fa-solid fa-briefcase"></i> Resume
                     </a>
                     <h1 class="section-header">
@@ -129,15 +131,12 @@
                         <h5 class="text">Tau Technology</h5>
                     </div>
                 </div>
-                <div class="section" id="services">
-                    <a
-                        href="#resume-section"
-                        class="btn btn-transparent btn-nav"
-                    >
-                        <i class="fa-brands fa-servicestack"></i>SERVICES
+                <div class="section" id="skills">
+                    <a href="#skills" class="btn btn-transparent btn-nav">
+                        <i class="fa-brands fa-servicestack"></i> Skills
                     </a>
                     <h1 class="section-header">
-                        My <span class="main-text">Specializations</span>
+                        My <span class="main-text">Skills</span>
                     </h1>
                     <div class="show-case">
                         <div class="item">
@@ -304,11 +303,8 @@
                     </div>
                 </div>
                 <div class="section" id="environment">
-                    <a
-                        href="#resume-section"
-                        class="btn btn-transparent btn-nav"
-                    >
-                        <i class="fa-solid fa-desktop"></i>Environment
+                    <a href="#environment" class="btn btn-transparent btn-nav">
+                        <i class="fa-solid fa-desktop"></i> Environment
                     </a>
                     <h1 class="section-header">
                         Coding <span class="main-text">Environment</span>
@@ -454,7 +450,7 @@
 
                     <h3>Suukootj@gmail.com</h3>
 
-                    <form action="">
+                    <form action="" onsubmit="">
                         <div class="form">
                             <div class="form-group">
                                 <label for="fullName" class="label"
@@ -506,5 +502,6 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
