@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;500;600;800&display=swap');
+:root {
+    --black-primary: #020617;
+    --green-primary: #16a34a;
+    --primary-text: white;
+    --secondary-text: #9ca3af;
+    --border-light: #6b7280;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+html {
+    padding: 0;
+}
+
+body {
+    background-color: var(--black-primary);
+    background-image: linear-gradient(
+        45deg,
+        var(--black-primary) 65%,
+        #1e293b 100%
+    );
+    background-repeat: round;
+    background-attachment: fixed;
+    color: var(--primary-text);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    border: solid 1px;
+    border-radius: 2rem;
+    padding-block: 1rem;
+    cursor: pointer;
+}
+
+.btn-green {
+    background-color: #16a34a;
+    color: var(--black-primary);
+}
+
+.btn-green:hover {
+    box-shadow: 0 0 30px 3px var(--green-primary);
+    border-color: var(--green-primary);
+}
+
+.btn-transparent {
+    background-color: var(--black-primary);
+    color: var(--primary-text);
+}
+
+.btn-nav {
+    padding: 0.4rem 1.8rem;
+    color: var(--secondary-text);
+    border-color: var(--border-light);
+    margin-top: 3rem;
+}
+
+.main {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.side-bar {
+    border: solid 1px var(--border-light);
+    width: 18%;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    position: sticky;
+    height: 80vh;
+    top: 2rem;
+}
+
+.side-bar .title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.title h1,
+p {
+    margin: 0;
+}
+
+.title p {
+    width: 10rem;
+    font-size: smaller;
+}
+
+.side-bar .img-container {
+    width: 90%rem;
+    object-fit: cover;
+    margin: auto;
+    margin-block: 2rem;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.side-bar .details .email {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.side-bar .details .address {
+    font-size: 1rem;
+}
+
+.side-bar .details p {
+    margin-block: 1rem;
+    font-size: smaller;
+    color: var(--secondary-text);
+}
+.side-bar .socials {
+    display: flex;
+    margin: auto;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+.socials .icon {
+    border: solid 1px var(--green-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.socials .icon:hover {
+    box-shadow: 0 0 30px 3px var(--green-primary);
+}
+
+.side-bar .btn-hire-me {
+    margin-block: 9rem 2rem;
+    width: 18rem;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.body {
+    padding: 2rem;
+}
+
+.intro {
+    margin-bottom: 20rem;
+}
+
+.section-header {
+    font-size: 4rem;
+    width: 65%;
+    text-align: start;
+    line-height: 6rem;
+    animation: slideUp 1.5s ease-out forwards;
+    margin-top: 1rem;
+}
+
+.section-header .main-text {
+    color: var(--green-primary);
+}
+
+.stastics {
+    margin-top: 10rem;
+    display: flex;
+    gap: 6rem;
+    text-align: center;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.stastics .item h1 {
+    color: #16a34a;
+    font-size: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.stastics .item p {
+    color: var(--secondary-text);
+    font-size: larger;
+}
+
+.nav {
+    width: 1rem;
+    height: 17rem;
+    position: sticky;
+    top: 30%;
+    left: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: solid 1px var(--border-light);
+    padding: 2rem 1.1rem;
+    border-radius: 2rem;
+}
+.nav a {
+    color: var(--primary-text);
+}
+
+.nav a:hover {
+    color: var(--green-primary);
+}
+
+.section {
+    min-height: 100vh;
+    padding-top: 4rem;
+    /* border: solid 1px yellow; */
+    /* padding-block: 15rem; */
+}
+
+.about-text {
+    color: var(--secondary-text);
+    width: 70%;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+.resume .item {
+    border-left: solid 1px;
+    padding-left: 2rem;
+    border-left-color: var(--border-light);
+    padding-block: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+.resume .item h2,
+h5 {
+    margin-block: 0.8rem;
+}
+
+.resume .item .date {
+    margin-bottom: 1.5rem;
+}
+.resume .item .text {
+    color: var(--secondary-text);
+}
+
+.show-case {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.show-case .item {
+    border: solid 1px var(--border-light);
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.show-case .item:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.show-case .item h1 {
+    margin: 0;
+}
+.show-case .item .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.show-case .item img {
+    filter: invert(100%);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.form .form-group {
+    width: 45%;
+}
+
+.form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group .input {
+    background: none;
+    border: none;
+    outline: none;
+    padding-bottom: 1rem;
+    margin-block: 1.5rem 3rem;
+    color: var(--primary-text);
+    font-size: larger;
+    border-bottom: 1px solid rgb(50, 49, 49);
+    transition: border-color 0.5s ease-in-out;
+    /* letter-spacing: 2px; */
+}
+
+.form-group .input:focus {
+    border-bottom: solid 1px whitesmoke;
+}
+
+.text-area {
+    flex: 0 0 100%;
+}
+
+.btn-message-me {
+    padding-inline: 4rem;
+    margin: auto;
+    margin-top: 4rem;
+}
