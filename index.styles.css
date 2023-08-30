@@ -452,6 +452,7 @@ h5 {
         height: 17rem;
         top: 30%;
         left: 95%;
+        position: sticky;
     }
     .about-text {
         width: 70%;
