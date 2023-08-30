@@ -344,7 +344,7 @@ h5 {
     .side-bar .btn-hire-me {
         width: 10rem;
         padding-block: 0.7rem;
-        margin-block: 2rem 2rem;
+        margin-block: 2rem 3rem;
     }
     .title h1 {
         font-weight: 500;
@@ -352,7 +352,7 @@ h5 {
     }
 
     .img-container img {
-        width: 90%;
+        width: 95%;
     }
 
     .section-header {
