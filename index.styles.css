@@ -337,12 +337,22 @@ h5 {
         position: static;
         width: 80%;
         margin: auto;
-        margin-top: 2rem;
+        margin-block: 2rem 3rem;
+        padding-bottom: 0.1rem;
     }
 
     .side-bar .btn-hire-me {
         width: 10rem;
         padding-block: 0.7rem;
+        margin-block: 2rem 2rem;
+    }
+    .title h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .img-container img {
+        width: 90%;
     }
 
     .section-header {
