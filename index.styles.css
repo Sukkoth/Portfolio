@@ -69,7 +69,7 @@ body {
 
 .main {
     padding: 2rem;
-    display: flex;
+    /* display: flex; */
     gap: 2rem;
 }
 
@@ -80,8 +80,6 @@ body {
     padding: 2rem;
     text-align: center;
     position: sticky;
-    height: 80vh;
-    top: 2rem;
 }
 
 .side-bar .title {
@@ -143,18 +141,17 @@ p {
     color: var(--primary-text);
 }
 .socials .icon {
-    border: solid 1px var(--green-primary);
+    border: solid 1px var(--border-light);
     padding: 0.5rem;
     border-radius: 50%;
 }
 
 .socials .icon:hover {
-    box-shadow: 0 0 30px 3px var(--green-primary);
+    box-shadow: 0 0 30px 3px var(--border-light);
 }
 
 .side-bar .btn-hire-me {
-    margin-block: 9rem 2rem;
-    width: 18rem;
+    margin-block: 4rem 2rem;
     animation: slideUp 1s ease-out forwards;
 }
 
@@ -168,13 +165,12 @@ p {
 
 .section-header {
     font-size: 4rem;
-    font-weight: 400;
     width: 65%;
     text-align: start;
     line-height: 6rem;
     animation: slideUp 1.5s ease-out forwards;
     margin-top: 3rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .section-header .main-text {
@@ -182,7 +178,6 @@ p {
 }
 
 .stastics {
-    margin-top: 10rem;
     display: flex;
     gap: 6rem;
     text-align: center;
@@ -197,17 +192,10 @@ p {
 
 .stastics .item p {
     color: var(--secondary-text);
-    font-size: larger;
 }
 
 .nav {
-    width: 1rem;
-    height: 17rem;
-    position: sticky;
-    top: 30%;
-    left: 95%;
     display: flex;
-    flex-direction: column;
     gap: 2rem;
     border: solid 1px var(--border-light);
     padding: 2rem 1.1rem;
@@ -230,7 +218,7 @@ p {
 
 .about-text {
     color: var(--secondary-text);
-    width: 70%;
+
     line-height: 2.2rem;
     text-align: justify;
 }
@@ -302,14 +290,9 @@ h5 {
 .form {
     display: flex;
     flex-direction: row;
-    width: 75%;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2rem;
-}
-
-.form .form-group {
-    width: 45%;
 }
 
 .form .form-group {
@@ -324,7 +307,6 @@ h5 {
     padding-bottom: 1rem;
     margin-block: 1.5rem 3rem;
     color: var(--primary-text);
-    font-size: larger;
     border-bottom: 1px solid rgb(50, 49, 49);
     transition: border-color 0.5s ease-in-out;
     /* letter-spacing: 2px; */
@@ -342,4 +324,138 @@ h5 {
     padding-inline: 4rem;
     margin: auto;
     margin-top: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        padding: 1rem;
+    }
+    .main {
+        padding: 0.5rem;
+    }
+    .side-bar {
+        position: static;
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    .side-bar .btn-hire-me {
+        width: 10rem;
+        padding-block: 0.7rem;
+    }
+
+    .section-header {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .stastics {
+        margin-top: 2rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .stastics .item h1 {
+        font-size: 2rem;
+    }
+
+    .nav {
+        position: sticky;
+        top: 1rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0.5rem;
+        background-color: #1e293b;
+        z-index: 1;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .resume .item .date {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    .resume .item .text {
+        color: var(--secondary-text);
+        font-size: 0.8rem;
+    }
+
+    .resume .item .header {
+        font-size: 1.2rem;
+    }
+
+    .show-case {
+        gap: 2rem;
+    }
+    .show-case .item {
+        width: 6rem;
+        height: 6rem;
+    }
+    .show-case .item h1 {
+        font-size: 1rem;
+    }
+    .show-case .item .icon {
+        font-size: 2rem;
+    }
+    .show-case .item img {
+        width: 3rem;
+    }
+    * svg {
+        width: 2rem;
+    }
+
+    .form {
+        flex-direction: column;
+        padding: 0;
+    }
+    .form-group .label {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main {
+        display: flex;
+    }
+
+    .side-bar {
+        height: 80vh;
+        top: 2rem;
+    }
+    .side-bar .btn-hire-me {
+        margin-block: 9rem 2rem;
+        width: 18rem;
+    }
+    .stastics {
+        margin-top: 10rem;
+    }
+    .stastics .item p {
+        font-size: larger;
+    }
+
+    .nav {
+        flex-direction: column;
+        width: 1rem;
+        height: 17rem;
+        top: 30%;
+        left: 95%;
+    }
+    .about-text {
+        width: 70%;
+    }
+    .form {
+        width: 75%;
+    }
+    .form .form-group {
+        width: 45%;
+    }
+    .form-group .input {
+        font-size: larger;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 }
