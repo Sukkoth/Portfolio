@@ -63,23 +63,23 @@ body {
     padding: 0.4rem 1.8rem;
     color: var(--secondary-text);
     border-color: var(--border-light);
+    margin-top: 3rem;
     cursor: default;
 }
 
 .main {
-    padding: 0.5rem;
+    padding: 2rem;
+    /* display: flex; */
+    gap: 2rem;
 }
 
 .side-bar {
     border: solid 1px var(--border-light);
+    width: 18%;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    position: static;
-    width: 80%;
-    margin: auto;
-    margin-block: 2rem 3rem;
-    padding-bottom: 0.1rem;
+    position: sticky;
 }
 
 .side-bar .title {
@@ -95,8 +95,7 @@ p {
 }
 
 .title h1 {
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .title p {
@@ -112,7 +111,7 @@ p {
 }
 
 .img-container img {
-    width: 95%;
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -132,10 +131,9 @@ p {
 }
 .side-bar .socials {
     display: flex;
-    margin-inline: auto;
+    margin: auto;
     width: 55%;
     justify-content: space-between;
-    gap: 0.5rem;
 }
 
 .socials a {
@@ -153,14 +151,12 @@ p {
 }
 
 .side-bar .btn-hire-me {
+    margin-block: 4rem 2rem;
     animation: slideUp 1s ease-out forwards;
-    width: 10rem;
-    padding-block: 0.7rem;
-    margin-block: 2rem 3rem;
 }
 
 .body {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .intro {
@@ -168,13 +164,13 @@ p {
 }
 
 .section-header {
+    font-size: 4rem;
+    width: 65%;
     text-align: start;
+    line-height: 6rem;
     animation: slideUp 1.5s ease-out forwards;
     margin-top: 3rem;
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 3rem;
-    width: 100%;
 }
 
 .section-header .main-text {
@@ -183,16 +179,14 @@ p {
 
 .stastics {
     display: flex;
+    gap: 6rem;
     text-align: center;
     animation: slideUp 1s ease-out forwards;
-    margin-top: 2rem;
-    gap: 1rem;
-    justify-content: center;
 }
 
 .stastics .item h1 {
     color: #16a34a;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 0.8rem;
 }
 
@@ -204,15 +198,8 @@ p {
     display: flex;
     gap: 2rem;
     border: solid 1px var(--border-light);
+    padding: 2rem 1.1rem;
     border-radius: 2rem;
-    position: sticky;
-    top: 1rem;
-    margin-inline: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0.5rem;
-    background-color: #1e293b;
-    z-index: 1;
 }
 .nav a {
     color: var(--primary-text);
@@ -229,7 +216,7 @@ p {
 
 .about-text {
     color: var(--secondary-text);
-    width: 100%;
+
     line-height: 2.2rem;
     text-align: justify;
 }
@@ -252,16 +239,10 @@ h5 {
 }
 
 .resume .item .date {
-    margin-bottom: 1rem;
-    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 .resume .item .text {
     color: var(--secondary-text);
-    font-size: 0.8rem;
-}
-
-.resume .item .header {
-    font-size: 1.2rem;
 }
 
 .show-case {
@@ -270,13 +251,13 @@ h5 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .show-case .item {
     border: solid 1px var(--border-light);
-    width: 6rem;
-    height: 6rem;
+    width: 10rem;
+    height: 10rem;
     text-align: center;
     padding: 0.8rem;
     border-radius: 1rem;
@@ -294,24 +275,22 @@ h5 {
 
 .show-case .item h1 {
     margin: 0;
-    font-size: 1rem;
 }
 .show-case .item .icon {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 
 .show-case .item img {
     filter: invert(100%);
-    width: 3rem;
 }
 
 .form {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: column;
-    padding: 0;
+    padding: 2rem;
 }
 
 .form .form-group {
@@ -328,10 +307,7 @@ h5 {
     color: var(--primary-text);
     border-bottom: 1px solid rgb(50, 49, 49);
     transition: border-color 0.5s ease-in-out;
-}
-
-.form-group .label {
-    font-size: 0.7rem;
+    /* letter-spacing: 2px; */
 }
 
 .form-group .input:focus {
@@ -348,7 +324,41 @@ h5 {
     margin-top: 4rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .body {
+        padding: 1rem;
+    }
+    .main {
+        padding: 0.5rem;
+    }
+    .side-bar {
+        position: static;
+        width: 80%;
+        margin: auto;
+        margin-block: 2rem 3rem;
+        padding-bottom: 0.1rem;
+    }
+
+    .side-bar .btn-hire-me {
+        width: 10rem;
+        padding-block: 0.7rem;
+        margin-block: 2rem 3rem;
+    }
+    .title h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .img-container img {
+        width: 95%;
+    }
+
+    .section-header {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        width: 100%;
+        text-align: center;
+    }
     .stastics {
         margin-top: 2rem;
         gap: 1rem;
@@ -359,148 +369,102 @@ h5 {
         font-size: 2rem;
     }
 
-    * svg {
-        width: 2rem;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    * svg {
-        width: 3rem;
-    }
-    .main {
-        display: flex;
-        gap: 0.5rem;
-    }
-
     .nav {
         position: sticky;
-        top: 30%;
-        left: 95%;
-        height: 20rem;
-        flex-direction: column;
+        top: 1rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0.5rem;
+        background-color: #1e293b;
+        z-index: 1;
     }
-    .side-bar {
-        position: sticky;
-        height: 70vh;
-        top: 2rem;
-        width: 25%;
-        padding-inline: 0.6rem;
-        margin-block: 0rem;
+    .about-text {
+        width: 100%;
     }
-
-    .side-bar .socials {
-        width: 90%;
+    .resume .item .date {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
     }
-
-    .side-bar .details .email {
-        font-size: 1rem;
-    }
-
-    .side-bar .details .address {
+    .resume .item .text {
+        color: var(--secondary-text);
         font-size: 0.8rem;
     }
 
-    .side-bar .btn-hire-me {
-        margin-block: 3rem 2rem;
-        width: 10rem;
-        margin-inline: auto;
+    .resume .item .header {
+        font-size: 1.2rem;
     }
 
-    .intro {
-        margin-top: 2.5rem;
+    .show-case {
+        gap: 2rem;
     }
-
-    .section {
-        min-height: 100vh;
-        padding-top: 4rem;
+    .show-case .item {
+        width: 6rem;
+        height: 6rem;
     }
-
-    .section-header {
+    .show-case .item h1 {
+        font-size: 1rem;
+    }
+    .show-case .item .icon {
         font-size: 2rem;
-        line-height: 4rem;
+    }
+    .show-case .item img {
+        width: 3rem;
+    }
+    * svg {
+        width: 2rem;
+    }
+
+    .form {
+        flex-direction: column;
+        padding: 0;
+    }
+    .form-group .label {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main {
+        display: flex;
+    }
+
+    .side-bar {
+        height: 80vh;
+        top: 2rem;
+    }
+    .side-bar .btn-hire-me {
+        margin-block: 9rem 2rem;
+        width: 18rem;
     }
     .stastics {
         margin-top: 10rem;
-        gap: 5rem;
     }
-    .stastics .item h1 {
-        font-size: 3rem;
-        margin-bottom: 0.8rem;
+    .stastics .item p {
+        font-size: larger;
     }
 
+    .nav {
+        flex-direction: column;
+        width: 1rem;
+        height: 17rem;
+        top: 30%;
+        left: 95%;
+        position: sticky;
+    }
     .about-text {
-        width: 80%;
-    }
-
-    .resume .item .header {
-        font-size: 1.6rem;
+        width: 70%;
     }
     .form {
-        width: 80%;
+        width: 75%;
     }
-
+    .form .form-group {
+        width: 45%;
+    }
     .form-group .input {
         font-size: larger;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .side-bar .btn-hire-me {
-        margin-block: 10rem 2rem;
-    }
-
-    .side-bar {
-        width: 25%;
-        padding-inline: 3rem;
-        height: 80vh;
-    }
-
-    .main {
-        gap: 2rem;
-        padding: 2rem;
-    }
-    .body {
-        padding: 2rem;
-    }
-
-    .section-header {
-        font-size: 4rem;
-        width: 65%;
-        line-height: 6rem;
-    }
-
-    .stastics {
-        justify-content: start;
-    }
-
-    .stastics .item h1 {
-        font-size: 4rem;
-    }
-    .about-text {
-        width: 65%;
-    }
-
-    .img-container img {
-        width: 100%;
-    }
-    .side-bar .details .email {
-        font-size: 1.3rem;
-        margin: 0;
-    }
-    .show-case {
-        width: 80%;
-        margin-inline: auto;
-    }
-    .show-case .item {
-        height: 8rem;
-        width: 8rem;
-    }
-
-    .form {
-        flex-direction: row;
-    }
-    .form .form-group {
-        width: 45%;
-    }
+@media screen and (min-width: 1200px) {
 }
