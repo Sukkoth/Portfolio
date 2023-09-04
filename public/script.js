@@ -46,6 +46,7 @@ const sendMessage = async (fullName, email, phone, message) => {
         const data = await response.json();
 
         if (!response.ok) {
+            console.log('ERROR', data);
             throw new Error(data.message);
         }
 
