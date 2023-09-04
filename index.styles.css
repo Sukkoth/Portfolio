@@ -66,6 +66,17 @@ body {
     cursor: default;
 }
 
+.btn-disabled {
+    background-color: #6b7280;
+    border-color: #6b7280;
+}
+
+.btn-disabled:hover {
+    box-shadow: none;
+    border-color: inherit;
+    cursor: not-allowed;
+}
+
 .main {
     padding: 0.5rem;
 }
