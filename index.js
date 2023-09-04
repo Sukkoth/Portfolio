@@ -7,6 +7,7 @@ const allowedOrigins = [
     'http://localhost:5500',
     'http://localhost:8000',
     'https://portfolio-nwsq.onrender.com',
+    'https://portfolio-bice-seven-92.vercel.app',
     'https://portfolio-seven-iota-83.vercel.app',
 ];
 
