@@ -3,6 +3,7 @@ const app = express();
 const messageController = require('./messageController');
 const cors = require('cors');
 const morgan = require('morgan');
+const errorHandler = require('./errorHandler');
 const allowedOrigins = [
     'http://localhost:5500',
     'http://localhost:8000',
@@ -31,6 +32,10 @@ app.use(express.json());
 app.post('/message', messageController.message);
 app.get('/', (req, res) => {
     res.sendFile('index.html');
+});
+
+app.use((req, res) => {
+    res.status(404).json({ error: '404 Not Found' });
 });
 
 app.listen(process.env.APP_PORT, () =>
