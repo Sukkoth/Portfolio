@@ -3,7 +3,6 @@ const app = express();
 const messageController = require('./messageController');
 const cors = require('cors');
 const morgan = require('morgan');
-const errorHandler = require('./errorHandler');
 const allowedOrigins = [
     'http://localhost:5500',
     'http://localhost:8000',
