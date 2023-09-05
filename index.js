@@ -28,10 +28,10 @@ app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
 app.use(cors(corsOptions));
 app.use(express.json());
+app.post('/message', messageController.message);
 app.get('/', (req, res) => {
     res.sendFile('index.html');
 });
-app.post('/message', messageController.message);
 
 app.listen(process.env.APP_PORT, () =>
     console.log(`Server running on port ${process.env.APP_PORT}`)
