@@ -15,8 +15,10 @@ const corsOptions = {
     origin: (origin, callback) => {
         if (allowedOrigins.includes(origin) || !origin) {
             callback(null, true);
+            console.log('CORS ALLOWED');
         } else {
             callback(new Error('Not allowed by CORS'));
+            console.error('DOMAIN NOT ALLOWED BY CORS');
         }
     },
 };
@@ -24,10 +26,7 @@ const corsOptions = {
 app.use(express.static(__dirname + '/public'));
 
 app.use(morgan('dev'));
-if (process.env.APP_ENV === 'DEV') {
-    app.use(cors(corsOptions));
-}
-
+app.use(cors(corsOptions));
 app.use(express.json());
 app.get('/', (req, res) => {
     res.sendFile('index.html');

@@ -46,7 +46,7 @@ const sendMessage = async (fullName, email, phone, message) => {
         const data = await response.json();
 
         if (!response.ok) {
-            console.log('ERROR', data);
+            console.error('ERROR', data);
             throw new Error(data.message);
         }
 
@@ -59,6 +59,7 @@ const sendMessage = async (fullName, email, phone, message) => {
         document.getElementById('message').value = '';
         document.getElementById('phone').value = '';
     } catch (error) {
+        console.error('ERROR', error);
         toastr.error(error?.message, 'ERROR');
     } finally {
         messageButton.classList.remove('btn-disabled');
