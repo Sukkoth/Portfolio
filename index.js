@@ -24,7 +24,10 @@ const corsOptions = {
 app.use(express.static(__dirname + '/public'));
 
 app.use(morgan('dev'));
-app.use(cors(corsOptions));
+if (process.env.APP_ENV === 'DEV') {
+    app.use(cors(corsOptions));
+}
+
 app.use(express.json());
 app.get('/', (req, res) => {
     res.sendFile('index.html');
