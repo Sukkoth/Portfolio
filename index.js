@@ -23,6 +23,7 @@ const corsOptions = {
     },
 };
 
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.use(morgan('dev'));
@@ -30,7 +31,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.post('/message', messageController.message);
 app.get('/', (req, res) => {
-    res.sendFile('index.html');
+    res.render('index');
 });
 
 app.use((req, res) => {
