@@ -9,6 +9,7 @@ const allowedOrigins = [
     'https://portfolio-nwsq.onrender.com',
     'https://portfolio-erlotdlwa-sukkoth.vercel.app/',
     'https://portfolio-seven-iota-83.vercel.app',
+    'https://crimson-pelican-vest.cyclic.cloud/',
 ];
 
 const corsOptions = {
