@@ -47,7 +47,7 @@ const sendMessage = async (fullName, email, phone, message) => {
 
         if (!response.ok) {
             console.error('ERROR', data);
-            throw new Error(data.message);
+            throw new Error(data?.message || 'Try again later!');
         }
 
         toastr.success(
