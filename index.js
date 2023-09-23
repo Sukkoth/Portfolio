@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const allowedOrigins = [
     'http://localhost:5500',
     'http://localhost:8000',
-    'https://crimson-pelican-vest.cyclic.cloud/',
+    'https://crimson-pelican-vest.cyclic.cloud',
 ];
 
 const corsOptions = {
