@@ -6,9 +6,7 @@ const morgan = require('morgan');
 const allowedOrigins = [
     'http://localhost:5500',
     'http://localhost:8000',
-    'https://portfolio-nwsq.onrender.com',
-    'https://portfolio-erlotdlwa-sukkoth.vercel.app/',
-    'https://portfolio-seven-iota-83.vercel.app',
+    'https://crimson-pelican-vest.cyclic.cloud/',
 ];
 
 const corsOptions = {

@@ -35,13 +35,16 @@ const sendMessage = async (fullName, email, phone, message) => {
     messageButton.innerText = 'Sending message....';
 
     try {
-        const response = await fetch('/message', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ fullName, email, phone, message }),
-        });
+        const response = await fetch(
+            'https://crimson-pelican-vest.cyclic.cloud/message',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ fullName, email, phone, message }),
+            }
+        );
 
         const data = await response.json();
 
